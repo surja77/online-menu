@@ -3,64 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Foodie Bites</title>
+  <title>Restaurant Menu</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+    }
+  </style>
 </head>
-<body class="bg-orange-50 text-gray-900">
+<body class="bg-white text-black">
 
-  <!-- Header -->
-  <header class="text-center py-6 bg-white shadow-md sticky top-0 z-50">
-    <h1 class="text-3xl font-bold text-orange-600">Foodie Bites</h1>
-    <p class="text-sm text-gray-500">Tasty & Fresh Every Day!</p>
-  </header>
+  <!-- Main Container -->
+  <div class="max-w-md mx-auto mt-6 p-4 bg-yellow-400 rounded-2xl shadow-lg">
+    
+    <!-- Header -->
+    <div class="flex justify-between items-center">
+      <h1 class="text-xl font-bold">Chicken Curry</h1>
+      <button class="bg-black text-white px-3 py-1 rounded-full text-sm">Save</button>
+    </div>
 
-  <!-- Categories -->
-  <div class="flex overflow-x-auto gap-4 px-4 py-3 bg-white shadow-sm">
-    <button class="bg-orange-500 text-white px-4 py-2 rounded-full">All</button>
-    <button class="bg-gray-200 px-4 py-2 rounded-full">Pizza</button>
-    <button class="bg-gray-200 px-4 py-2 rounded-full">Burger</button>
-    <button class="bg-gray-200 px-4 py-2 rounded-full">Drinks</button>
-    <button class="bg-gray-200 px-4 py-2 rounded-full">Desserts</button>
+    <!-- Dish Image -->
+    <div class="my-4">
+      <img src="https://via.placeholder.com/300x200" alt="Chicken Curry" class="rounded-xl shadow-md">
+    </div>
+
+    <!-- Description -->
+    <p class="text-black text-sm mb-2">
+      Delicious Indian-style chicken curry cooked in a spicy tomato and onion gravy. Best served with rice or naan.
+    </p>
+
+    <!-- Price and Button -->
+    <div class="flex items-center justify-between mt-4">
+      <span class="font-bold text-lg text-black">$12.99</span>
+      <button class="bg-black text-white px-4 py-2 rounded-xl text-sm">Order Now</button>
+    </div>
   </div>
-
-  <!-- Menu Items -->
-  <section class="p-4 grid grid-cols-1 gap-6">
-    <!-- Dish Card -->
-    <div class="bg-white rounded-2xl shadow-md overflow-hidden">
-      <img src="https://source.unsplash.com/400x250/?burger" alt="Burger" class="w-full h-48 object-cover">
-      <div class="p-4">
-        <h2 class="text-xl font-semibold">Cheese Burger</h2>
-        <p class="text-gray-500 text-sm mt-1">Juicy grilled beef with cheese</p>
-        <div class="flex justify-between items-center mt-4">
-          <span class="text-orange-600 font-bold text-lg">$6.99</span>
-          <button class="bg-orange-500 text-white px-4 py-2 rounded-full text-sm">Order Now</button>
-        </div>
-      </div>
-    </div>
-
-    <!-- More Dishes -->
-    <div class="bg-white rounded-2xl shadow-md overflow-hidden">
-      <img src="https://source.unsplash.com/400x250/?pizza" alt="Pizza" class="w-full h-48 object-cover">
-      <div class="p-4">
-        <h2 class="text-xl font-semibold">Veggie Pizza</h2>
-        <p class="text-gray-500 text-sm mt-1">Loaded with fresh veggies</p>
-        <div class="flex justify-between items-center mt-4">
-          <span class="text-orange-600 font-bold text-lg">$8.99</span>
-          <button class="bg-orange-500 text-white px-4 py-2 rounded-full text-sm">Order Now</button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Add more cards here -->
-  </section>
-
-  <!-- Bottom Navbar -->
-  <nav class="fixed bottom-0 w-full bg-white shadow-md flex justify-around items-center py-3">
-    <button class="text-orange-600 font-semibold">Home</button>
-    <button class="text-gray-600">Menu</button>
-    <button class="text-gray-600">Cart</button>
-    <button class="text-gray-600">Profile</button>
-  </nav>
 
 </body>
 </html>
