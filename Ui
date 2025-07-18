@@ -1,0 +1,74 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Food Bank UI</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ffcad4, #a0c4ff);
+      color: #fff;
+    }.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.panel {
+  background: #111;
+  border-radius: 20px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.login .logo {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.login .btn {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.btn {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.red {
+  background: #ff4e4e;
+  color: #fff;
+}
+
+.white {
+  background: #fff;
+  color: #111;
+}
+
+.discount-card {
+  display: flex;
+  background: #ff4e4e;
+  padding: 10px;
+  border-radius: 15px;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.discount-img {
+  font-size: 40px;
+}
+
+.home .header-img {
+  background: url('https://via.placeholder.com/300x150') center/cover no-repeat;
+
